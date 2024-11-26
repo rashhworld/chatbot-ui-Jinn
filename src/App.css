@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    background-color: #3296D7;
+}
+
+.customization-panel {
+    padding: 10px 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.customization-panel label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.customization-panel input,
+.customization-panel select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    height: 37px;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* ////////////////////////////// */
+
+.chatbox {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxHeader {
+    padding: 0px 15px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerTitle .botIcon {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.headerTitle p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.headerTitle p span:last-child {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.boxHeader .closeChat {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.messageArea {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botBubbleWrapper {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.botBubbleWrapper .botIcon {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.userBubble {
+    border-radius: 15px 15px 0 15px;
+    padding: 20px;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+.botBubble {
+    border-radius: 0 15px 15px 15px;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.boxFooter {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.messageInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sendButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
